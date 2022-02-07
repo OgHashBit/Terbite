@@ -28,7 +28,7 @@ export default function App() {
         <Suspense fallback={null}>
           <Scene />
           <OrbitControls />
-          <Environment preset="space" background />
+          <Environment preset="night" background />
         </Suspense>
       </Canvas>
     </div>
