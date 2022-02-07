@@ -18,7 +18,7 @@ const Scene = () => {
   });
 
   console.log(obj);
-  return <primitive object={obj} scale={1.8} />;
+  return <primitive object={obj} scale={1.2} />;
 };
 
 export default function App() {
