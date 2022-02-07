@@ -18,7 +18,7 @@ const Scene = () => {
   });
 
   console.log(obj);
-  return <primitive object={obj} scale={0.4} />;
+  return <primitive object={obj} scale={0.8} />;
 };
 
 export default function App() {
@@ -28,7 +28,7 @@ export default function App() {
         <Suspense fallback={null}>
           <Scene />
           <OrbitControls />
-          <Environment preset="sunset" background />
+          <Environment preset="space" background />
         </Suspense>
       </Canvas>
     </div>
