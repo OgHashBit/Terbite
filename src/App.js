@@ -12,7 +12,7 @@ THREE.DefaultLoadingManager.addHandler(/\.dds$/i, new DDSLoader());
 
 const Scene = () => {
   const materials = useLoader(MTLLoader, "Poimandres.mtl");
-  const obj = useLoader(OBJLoader, "Poimandres.obj", (loader) => {
+  const obj = useLoader(OBJLoader, "diamond.obj", (loader) => {
     materials.preload();
     loader.setMaterials(materials);
   });
