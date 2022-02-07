@@ -11,7 +11,7 @@ import { Suspense } from "react";
 THREE.DefaultLoadingManager.addHandler(/\.dds$/i, new DDSLoader());
 
 const Scene = () => {
-  const materials = useLoader(MTLLoader, "Poimandres.mtl");
+  const materials = useLoader(MTLLoader, "diamond.mtl");
   const obj = useLoader(OBJLoader, "diamond.obj", (loader) => {
     materials.preload();
     loader.setMaterials(materials);
